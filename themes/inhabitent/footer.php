@@ -7,13 +7,46 @@
 
 ?>
 
-			</div><!-- #content -->
+			</div><!--end of #content -->
+<footer class="site-footer">
+	<div class="footer-block container">
+			<div class="footer-block-item">
+				<div class="contact-info">
+					<h3 class="uppercase">contact info</h3>
+					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+					<p><i class="fa fa-phone"></i><a href="tel:5557784567891">778-456-7891</a></p>
+					<p>	<span><i class="fa fa-facebook-square"></i>F</span>
+						<span><i class="fa fa-twitter-square"></i>T</span>
+						<span><i class="fa fa-goole-plus-square"></i>G+</span>
+					</p>
+				</div>
+			</div>
+			<div class="footer-block-item">
+				<div class="business-hours">
+					<h3 class="uppercase">business hours</h3>
+					<p><span class="bold">Monday-Friday:</span> 9am to 5pm</p>
+					<p><span class="bold">Saturday:</span> 10am to 2pm</p>
+					<p><span class="bold">Sunday:</span> Closed</p>
+				</div>
+			</div>
+			<div class="footer-block-item">
+				<div class="company-logo">
+					<a href="http://tent.academy.red" rel="home"><img src="../assets/images/logos/inhabitent-logo-text.svg">Inhabitent Logo</a>
+				</div>
+			</div>
+	</div>
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
+	<div class="container">
+			<div class="copyright">
+				<p class="uppercase">copyright &copy; 2018 inhabitent</p>
+			</div>
+	</div>
+</footer>
+
+		<!--end of .site-info -->
+	
+					
+			<!--end of #colophon -->
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
