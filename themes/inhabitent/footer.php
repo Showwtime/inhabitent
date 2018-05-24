@@ -31,7 +31,7 @@
 			</div>
 			<div class="footer-block-item">
 				<div class="company-logo">
-					<a href="http://tent.academy.red" rel="home"><img src="../assets/images/logos/inhabitent-logo-text.svg">Inhabitent Logo</a>
+					<a href="http://tent.academy.red" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg"></a>
 				</div>
 			</div>
 	</div>

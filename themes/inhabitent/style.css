@@ -722,7 +722,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
@@ -732,10 +732,15 @@ object {
   min-height: 100vh; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Novecentos', sans-serif;
-  font-weight: 400;
+  font-family: Novecentos, sans-serif;
+  font-weight: 300;
+  font-style: normal;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #2f1339; }
+
+h2 {
+  line-height: 1.25; }
 
 .container {
   margin-left: auto;
@@ -758,7 +763,7 @@ nav bar
 .menu-item a {
   text-decoration: none;
   margin: 0 1rem;
-  color: #fff;
+  color: #000;
   text-transform: uppercase; }
 
 .site-header {
@@ -772,9 +777,25 @@ nav bar
 Main Home Section =============================
 */
 .banner {
-  background-image: url("../assets/images/home-hero.jpg");
-  background-color: #248A83;
-  height: 95vh; }
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 4.5rem; }
+
+.logo img {
+  height: 275px;
+  width: 275px; }
 
 /*
 Product Info ==================================
@@ -792,16 +813,22 @@ Product Info ==================================
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center; }
+  text-align: center;
+  -webkit-margin-after: 4.5rem;
+          margin-block-end: 4.5rem; }
 
-.product-type-wrapper {
+.product-type-wrapper img {
+  height: 70px;
+  width: 70px; }
+
+.product-type-wrapper, .product-type-wrapper:visited {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 23.5%;
           flex: 0 1 23.5%;
   max-width: 23.5%;
-  padding: 1rem; }
+  padding: .75rem; }
 
 .product-type-wrapper:hover {
   border: 1px solid #d99054;
@@ -812,13 +839,14 @@ Product Info ==================================
   font-size: 1.2rem;
   font-weight: 300;
   font-style: normal;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  line-height: 1.5; }
 
 .product-type-img {
   height: 70px;
   width: 70px; }
 
-.button, .blk-button, .wht-button {
+.button, .button:visited, .blk-button, .wht-button {
   background: #248A83;
   color: #fff;
   font-family: 'Novecentos', sans-serif;
@@ -827,17 +855,14 @@ Product Info ==================================
   text-decoration: none;
   text-transform: uppercase;
   padding: .75rem 1.5rem; }
-
-.button:hover {
-  background-color: #196162; }
-
-.product-type-wrapper a:visited {
-  color: #fff; }
+  .button.button:hover, .button:visited.button:hover, .blk-button.button:hover, .wht-button.button:hover {
+    background-color: #196162;
+    color: #fff; }
 
 /*
 Inhabitent Journal ===============================
 */
-.inhabitent-journal ul {
+.inhabitent-journal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,23 +870,14 @@ Inhabitent Journal ===============================
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
-  margin-bottom: 0;
+  margin-bottom: 4.5rem;
   margin-left: 0;
   padding: 0; }
 
-.inhabitent-journal li {
-  border: 1px solid #e1e1e1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 32%;
-          flex: 0 1 32%;
-  position: relative; }
-
-.thumbnail {
-  background: #e1e1e1;
-  height: 250px;
-  position: relative; }
-
 .post-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -869,37 +885,53 @@ Inhabitent Journal ===============================
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .75rem;
-  line-height: 1.25; }
+  line-height: 1.25;
+  border: 1px solid #e1e1e1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  position: relative; }
 
 .post-info-wrapper h3 {
+  color: #248A83;
   font-size: 1.3rem;
-  margin-bottom: 3.75rem; }
+  font-weight: bold;
+  margin-bottom: 3.75rem;
+  margin-top: .25rem; }
+
+.post-info-wrapper h3:hover {
+  color: #000; }
 
 .post-info-wrapper a {
-  font-weight: bold;
-  color: #248A83;
+  color: #000;
   text-decoration: none; }
 
 .post-info-wrapper a:hover {
-  color: #000; }
-
-.blk-button {
-  border: 1px solid #000;
-  background-color: #fff;
-  position: absolute;
-  bottom: .75rem;
-  left: .75rem; }
-
-.blk-button:hover {
-  background: #248A83;
-  border: 1px solid #248A83; }
-
-.blk-button a:hover {
   color: #fff; }
 
-.blk-button:visited {
-  color: #000; }
+.thumbnail {
+  background: #e1e1e1;
+  max-height: auto;
+  width: 100%;
+  margin-bottom: .5rem; }
+
+.journal-comment-wrapper {
+  padding: .5rem;
+  line-height: 1.25; }
+
+.blk-button, .blk-button:visited {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  bottom: .75rem;
+  left: .75rem;
+  padding: .5rem 1.5rem; }
+  .blk-button.blk-button:hover, .blk-button:visited.blk-button:hover {
+    background: #248A83;
+    border: 1px solid #248A83; }
+    .blk-button.blk-button:hover:visited, .blk-button:visited.blk-button:hover:visited {
+      color: #fff; }
 
 /*
 Latest Adventures ================================
@@ -907,12 +939,28 @@ Latest Adventures ================================
 .grid-wrapper {
   padding: 2rem; }
 
+.grid-wrapper img {
+  max-height: 620px;
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+  width: auto; }
+
+.latest-adventures {
+  margin-bottom: 5rem; }
+
 .latest-adventures h3 {
   text-transform: none;
   font-family: 'Merriweather';
   font-weight: 400;
   color: #fff;
   margin-top: 24px; }
+
+.latest-adventures h3 a:hover {
+  color: #f2e5d0; }
 
 .latest-adventures a:visited {
   color: #fff; }
@@ -947,22 +995,25 @@ Latest Adventures ================================
   line-height: 1;
   position: relative;
   width: 100%;
-  background-color: green;
+  background-color: #e1e1e1;
   overflow: hidden; }
+
+.grid-block {
+  position: relative;
+  z-index: 2; }
 
 .grid-block a {
   text-decoration: none; }
 
-.wht-button {
+.wht-button, .wht-button:visited {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff; }
+  .wht-button:hover, .wht-button:visited:hover {
+    background-color: #248A83;
+    border: 1px solid #248A83; }
 
-.wht-button:hover {
-  background-color: #248A83;
-  border: 1px solid #248A83; }
-
-.more a {
+.more-button a {
   font-size: 1.2rem; }
 
 /* 
@@ -1014,6 +1065,9 @@ Footer ===========================================
 .company-logo {
   text-align: right; }
 
+.company-logo img {
+  max-width: 50%; }
+
 .company-logo a {
   text-decoration: none;
   color: #fff; }
@@ -1028,3 +1082,14 @@ Footer ===========================================
 
 .bold {
   font-weight: bold; }
+
+.about-page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #fff; }
