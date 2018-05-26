@@ -117,12 +117,18 @@ nav bar
 .logo img{
 	max-width: 50px;
 	max-height: 50px;
+	&:hover{
+		color: #f2e5d0;
+	}
 }
 
 .fa-search{
 	color: #fff;
 	text-shadow: 1 1 2px #323232;
 	margin-left: 1.5rem;
+	&:hover{
+		color: #f2e5d0;
+	}
 }
 
 .main-navigation{
@@ -139,6 +145,9 @@ nav bar
 	margin: 0 1rem;
 	color: #fff;
 	text-transform: uppercase;
+	&:hover{
+		color: #f2e5d0;
+	}
 }
 
 // .header-search{
@@ -512,7 +521,7 @@ Footer ===========================================
 }
 
 .about-container p{
-	font-family: Merryweather, serif;
+	font-family: 'Merryweather', serif;
 	font-size: 1.2rem;
 	font-weight: 300;
 	max-width: 800px;
@@ -524,4 +533,36 @@ Footer ===========================================
 	font-size: 2.1rem;
 	font-weight: 700;
 	text-align: center;
+}
+
+
+// Product Page =========================
+
+.product-images{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+	grid-gap: 20px 20px;
+	max-height: 250px;
+	max-width: none;
+	margin-bottom: 80rem;
+}
+
+.product-images img{
+	height: 250px;
+	overflow: hidden;
+}
+
+.entry-header{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e1e1e1;
+}
+
+.entry-header a{
+	font-family:'Merriweather';
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: none;
+	color: #000;
 }

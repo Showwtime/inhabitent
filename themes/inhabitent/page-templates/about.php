@@ -20,7 +20,7 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                     <div class="about-container">
-                    <div class="entry-content">
+                        <div class="entry-content">
                     
                         <h2>
                             <?php 
