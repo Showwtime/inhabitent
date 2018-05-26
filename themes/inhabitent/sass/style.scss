@@ -70,7 +70,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .home{
 	display: flex;
 	flex-direction: column;
-	font-family: Merriweather, serif;
+	font-family: 'Merriweather', serif;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: normal;
@@ -81,7 +81,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: Novecentos, sans-serif;
+	font-family: 'Novecentos', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	letter-spacing: 2px; 
@@ -99,31 +99,52 @@ h2{
 	width: 1120px;
 }
 
+
 /* 
 nav bar 
 */
-.navbar ul{
+
+.site-header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-header{
+	text-shadow: 1px 1px 2px #323232;
+}
+
+.logo img{
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.fa-search{
+	color: #fff;
+	text-shadow: 1 1 2px #323232;
+	margin-left: 1.5rem;
+}
+
+.main-navigation{
 	display: flex;
 	justify-content: flex-end;
-	list-style-type: none;
-	background-color: red;
+}
+
+.site-branding{
+	display: inline;
 }
 
 .menu-item a{
 	text-decoration: none;
 	margin: 0 1rem;
-	color: #000;
+	color: #fff;
 	text-transform: uppercase;
 }
 
-.site-header{
-	background-color: deepskyblue;
-}
-
-.header-search{
-	text-decoration: none;
-	list-style-type: none;
-}
+// .header-search{
+// 	text-decoration: none;
+// 	list-style-type: none;
+// }
 
 /*
 Main Home Section =============================
@@ -184,7 +205,7 @@ Product Info ==================================
 
 .product-type-wrapper p{
 	font-family: 'Merriweather';
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 300;
 	font-style: normal;
 	margin-bottom: 1.5rem;
@@ -223,22 +244,6 @@ Inhabitent Journal ===============================
 	margin-left: 0;
 	padding: 0;
 }
-
-// .inhabitent-journal{
-// 	border: 1px solid #e1e1e1;
-// 	flex: 0 1 32%;
-// 	position: relative;
-// }
-
-// .inhabitent-journal img{
-// 	height: 245px;
-// }
-
-// .thumbnail{
-// 	background: #e1e1e1;
-// 	height: 250px;
-// 	position: relative;
-// }
 
 .post-info-wrapper{
 	display: flex;
@@ -281,6 +286,7 @@ Inhabitent Journal ===============================
 }
 
 .journal-comment-wrapper{
+	font-size: .75rem;
 	padding: .5rem;
 	line-height: 1.25;
 }
@@ -323,7 +329,7 @@ Latest Adventures ================================
 }
 
 .latest-adventures{
-margin-bottom: 5rem;
+	margin-bottom: 5rem;
 }
 
 .latest-adventures h3{
@@ -355,21 +361,21 @@ margin-bottom: 5rem;
 .latest-adventures li:first-child{
 	grid-column: 1 / span 2;
 	grid-row: 1 / span 2;
-	font-size: 3rem;
+	font-size: 2.6rem;
 }
 
 .latest-adventures li:nth-child(2){
 	grid-column: 3 / span 2;
 	grid-row: 1 / span 1;
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 
 .latest-adventures li:nth-child(3){
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 .latest-adventures li:nth-child(4){
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 .latest-adventures li{
 	line-height: 1;
@@ -386,6 +392,12 @@ margin-bottom: 5rem;
 
 .grid-block a{
 	text-decoration: none;
+	color: #fff;
+}
+
+.grid-info a{
+	color: #fff;
+	line-height: 1.25;
 }
 
 .wht-button, .wht-button:visited{
@@ -488,8 +500,28 @@ Footer ===========================================
 // About Page ===========================
 
 .about-page-title{
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.entry-header{
 	display: flex;
 	justify-content: center;
-	align-self: center;
-	color: #fff;
+	align-items: center;
+}
+
+.about-container p{
+	font-family: Merryweather, serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+	max-width: 800px;
+	margin: 3rem auto;
+}
+
+.entry-content h2{
+	color: #2f1339;
+	font-size: 2.1rem;
+	font-weight: 700;
+	text-align: center;
 }

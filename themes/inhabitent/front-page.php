@@ -55,9 +55,6 @@ get_header(); ?>
 					<?php endforeach;  ?>
 					</div>
 					<?php endif; ?>
-
-					
-				
 			</section>
 
 

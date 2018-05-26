@@ -2,7 +2,7 @@
 
 // all of js goes here
 
-$('body').append('hello');
+$('body').append(' ');
 
 
 

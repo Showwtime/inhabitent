@@ -19,13 +19,16 @@ get_header(); ?>
                         <?php the_title( '<h1 class="entry-title about-page-title">', '</h1>' ); ?>
                     </header><!-- .entry-header -->
 
+                    <div class="about-container">
                     <div class="entry-content">
+                    
                         <h2>
                             <?php 
                             $our_story_props = CFS()->get_field_info('our_story');
                                 echo $our_story_props['label'];
                             ?>
                         </h2>
+                        
                         <?php echo CFS()->get('our_story') ?>
                         
                         <h2>
@@ -36,8 +39,9 @@ get_header(); ?>
                         </h2>
                         <?php echo CFS()->get('our_team') ?>
                  
-                     
+                    
                     </div><!-- .entry-content -->
+                    </div>
                 </article><!-- #post-## -->
 
 			<?php endwhile; // End of the loop. ?>

@@ -13,11 +13,11 @@
 			<div class="footer-block-item">
 				<div class="contact-info">
 					<h3 class="uppercase">contact info</h3>
-					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
-					<p><i class="fa fa-phone"></i><a href="tel:5557784567891">778-456-7891</a></p>
-					<p>	<span><i class="fa fa-facebook-square"></i>F</span>
-						<span><i class="fa fa-twitter-square"></i>T</span>
-						<span><i class="fa fa-goole-plus-square"></i>G+</span>
+					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com"> info@inhabitent.com</a></p>
+					<p><i class="fa fa-phone"></i><a href="tel:5557784567891"> 778-456-7891</a></p>
+					<p>	<span><i class="fa fa-facebook"></i></span>
+						<span><i class="fa fa-twitter"></i></span>
+						<span><i class="fa fa-google-plus"></i></span>
 					</p>
 				</div>
 			</div>
