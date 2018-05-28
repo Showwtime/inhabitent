@@ -20,7 +20,7 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                     <div class="about-container">
-                        <div class="entry-content">
+                        <div class="entry-content-about">
                     
                         <h2>
                             <?php 
@@ -41,11 +41,11 @@ get_header(); ?>
                  
                     
                     </div><!-- .entry-content -->
-                    </div>
+                   
                 </article><!-- #post-## -->
 
-			<?php endwhile; // End of the loop. ?>
-
+			    <?php endwhile; // End of the loop. ?>
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

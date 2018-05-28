@@ -7,25 +7,23 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="single-product-content-area-wrapper">
+
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="single-product-entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
+	<div class="single-product-title">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+	</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content-single container">
         <p class="price"><?php echo CFS()->get( ' price ' ); ?>
 		<?php the_content(); ?>
 		<?php
@@ -34,8 +32,8 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-
+	</div><!-- .entry-content-single -->
+	</div>
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

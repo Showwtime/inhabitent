@@ -66,7 +66,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 //  New Styles Here
-
+body,
 .home{
 	display: flex;
 	flex-direction: column;
@@ -343,7 +343,7 @@ Latest Adventures ================================
 
 .latest-adventures h3{
 	text-transform: none;
-	font-family: 'Merriweather';
+	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	color: #fff;
 	margin-top: 24px;
@@ -481,6 +481,7 @@ Footer ===========================================
 
 .company-logo{
 	text-align: right;
+	margin-top: 1.25rem;
 }
 
 .company-logo img{
@@ -528,7 +529,7 @@ Footer ===========================================
 	margin: 3rem auto;
 }
 
-.entry-content h2{
+.entry-content-about h2{
 	color: #2f1339;
 	font-size: 2.1rem;
 	font-weight: 700;
@@ -538,31 +539,101 @@ Footer ===========================================
 
 // Product Page =========================
 
+.page-header{
+	text-align: center;
+}
+
+.page-title{
+	font-size: 2.75rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.product-type-category{
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px dashed #c8c8c8;
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+}
+
+.stuff-category-button, .stuff-category-button:visited{
+	color: #248A83;
+	font-family: 'Novecento', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0 1.75rem;
+	&:hover{
+		color: #000;
+	}
+}
+
 .product-images{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: repeat(4,1fr);
 	grid-gap: 20px 20px;
-	max-height: 250px;
-	max-width: none;
-	margin-bottom: 80rem;
+	max-height: auto;
+	margin-bottom: 5rem;
 }
 
 .product-images img{
+	background: #e1e1e1;
 	height: 250px;
 	overflow: hidden;
+	border-bottom: 5px solid #e1e1e1;
 }
 
-.entry-header{
-	display: flex;
-	flex-direction: column;
+.product-item{
 	border: 1px solid #e1e1e1;
 }
 
-.entry-header a{
-	font-family:'Merriweather';
-	font-size: 16px;
-	text-decoration: none;
-	text-transform: none;
-	color: #000;
+// .product{
+// 	margin: 300;
+// 	padding: 0;
+// }
+
+.item-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
+
+// .entry-header{
+// 	display: flex;
+// 	flex-direction: column;
+// 	border: 1px solid #e1e1e1;
+// 	max-height: 95%;
+// }
+
+// .entry-header a{
+// 	font-family:'Merriweather';
+// 	font-size: 16px;
+// 	text-decoration: none;
+// 	text-transform: none;
+// 	color: #000;
+// }
+
+
+// Single Product Pages ==============================
+
+.single-product-title h1{
+	color: #d99054;
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-left: 3rem;
+
+}
+
+.single-product-entry-header{
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid #e1e1e1;
+	padding-top: 3rem;
+}
+
+// Journal/Contact Us Pages ================================
+
