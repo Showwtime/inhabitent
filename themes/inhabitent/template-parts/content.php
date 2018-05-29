@@ -28,3 +28,4 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+

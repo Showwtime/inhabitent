@@ -24,7 +24,7 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content-single container">
-        <p class="price"><?php echo CFS()->get( ' price ' ); ?>
+        <p class="price"><?php echo CFS()->get( 'price' ); ?>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

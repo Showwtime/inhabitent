@@ -108,6 +108,7 @@ nav bar
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
 .site-header{
@@ -150,11 +151,6 @@ nav bar
 	}
 }
 
-// .header-search{
-// 	text-decoration: none;
-// 	list-style-type: none;
-// }
-
 /*
 Main Home Section =============================
 */
@@ -167,7 +163,7 @@ Main Home Section =============================
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 	margin-bottom: 4.5rem;
 }
 
@@ -635,5 +631,58 @@ Footer ===========================================
 	padding-top: 3rem;
 }
 
+.type-product{
+	display: flex;
+}
+
 // Journal/Contact Us Pages ================================
 
+.blog .entry-header{
+	position: relative;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.blog .entry-header h2{
+	position: absolute;
+	color: #fff;
+	background-color: #248A83;
+	left: 0;
+	top: 0;
+	padding: .75rem, 1.5rem;
+	max-width: 75%;
+}
+
+.blog .entry-title a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.blog .entry-meta{
+	position: absolute;
+	color: #fff;
+	background-color: #248A83;
+	bottom: 0;
+	right: 0;
+	text-transform: uppercase;
+}
+
+.site-content{
+	display: flex;
+}
+
+.content-area{
+	flex-basis: 75%;
+	flex-grow: 1;
+}
+.widget-area{
+	flex-basis: 25%;
+	border-left: 1px solid #e1e1e1;
+}
+
+.widget-title h2{
+	font-size: 1.5rem;
+}
