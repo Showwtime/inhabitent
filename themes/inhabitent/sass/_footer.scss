@@ -1,0 +1,82 @@
+/* 
+Footer ===========================================
+*/
+
+.site-footer{
+	background-image: url("../../assets/images/dark-wood.png");
+	background-size: 512px 512px;
+	color: #fff;
+}
+
+.site-footer a{
+	text-decoration: none;
+}
+
+.footer-block{
+	display:flex;
+}
+
+.footer-block-item{
+	margin: 3rem 0;
+	padding-right: 1.5rem;
+	width: 25%;
+}
+
+.footer-block-item:last-child{
+	width: 50%;
+	padding-right: 0;
+}
+
+.contact-info h3{
+	color: #d99054;
+	font-size: 1.2rem;
+	margin-bottom: 0.75rem;
+}
+
+.contact-info p{
+	margin-bottom: .5rem;
+	font-size: 1rem;
+}
+
+.contact-info a{
+	color: #fff;
+}
+
+.business-hours h3{
+	color: #d99054;
+	font-size: 1.2rem;
+	margin-bottom: 0.75rem;
+}
+
+.business-hours p{
+	margin-bottom: .5rem;
+	font-size: 1rem;
+}
+
+.company-logo{
+	text-align: right;
+	margin-top: 1.25rem;
+}
+
+.company-logo img{
+	max-width: 50%;
+}
+
+.company-logo a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.copyright{
+	margin: auto;
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.bold{
+	font-weight: bold;
+}
