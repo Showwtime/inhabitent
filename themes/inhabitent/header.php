@@ -16,12 +16,13 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body class="container" <?php body_class(); ?>>
+	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header container" role="banner">
-			<div class="fixed-header">
+			<header id="masthead" class="site-header" role="banner">
+			<div class="fixed-header container">
+				<div class="header-links">
 				<div class="site-branding">
 					<div class="logo">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>				
@@ -37,7 +38,7 @@
 					<i class="fa fa-search"></i>
 					</div>
 				</nav><!-- #site-navigation -->
-		
+			</div>
 			</div>
 			</header><!-- #masthead -->
 

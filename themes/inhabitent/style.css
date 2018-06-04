@@ -753,13 +753,14 @@ h2 {
 nav bar 
 */
 .site-header {
+  width: 100%;
   position: fixed;
   background: #fff;
   background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   padding: 0.5, 0;
   z-index: 5; }
-  .site-header .fixed-header {
+  .site-header .header-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -769,23 +770,22 @@ nav bar
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     margin: auto;
     font-family: 'Novecentos';
     height: 50px; }
-    .site-header .fixed-header .logo img {
+    .site-header .header-links .logo img {
       height: 50px;
       max-width: 50px; }
-    .site-header .fixed-header .main-navigation {
+    .site-header .header-links .main-navigation {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-      .site-header .fixed-header .main-navigation li {
+      .site-header .header-links .main-navigation li {
         padding-left: 1.5rem; }
-      .site-header .fixed-header .main-navigation .header-search {
+      .site-header .header-links .main-navigation .header-search {
         color: #248A83;
         padding-left: 1.5rem; }
 
@@ -796,9 +796,9 @@ Main Home Section =============================
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
