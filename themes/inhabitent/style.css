@@ -464,11 +464,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -728,8 +728,6 @@ body,
   font-style: normal;
   font-weight: normal;
   line-height: 1.75;
-  background: #fff;
-  color: #404040;
   min-height: 100vh; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -746,56 +744,50 @@ h2 {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
+  width: 1120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /* 
 nav bar 
 */
-.site-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .site-header {
-  text-shadow: 1px 1px 2px #323232; }
-
-.logo img {
-  max-width: 50px;
-  max-height: 50px; }
-  .logo img:hover {
-    color: #f2e5d0; }
-
-.fa-search {
-  color: #fff;
-  text-shadow: 1 1 2px #323232;
-  margin-left: 1.5rem; }
-  .fa-search:hover {
-    color: #f2e5d0; }
-
-.main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-
-.site-branding {
-  display: inline; }
-
-.menu-item a {
-  text-decoration: none;
-  margin: 0 1rem;
-  color: #fff;
-  text-transform: uppercase; }
-  .menu-item a:hover {
-    color: #f2e5d0; }
+  position: fixed;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5, 0;
+  z-index: 5; }
+  .site-header .fixed-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'Novecentos';
+    height: 50px; }
+    .site-header .fixed-header .logo img {
+      height: 50px;
+      max-width: 50px; }
+    .site-header .fixed-header .main-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .site-header .fixed-header .main-navigation li {
+        padding-left: 1.5rem; }
+      .site-header .fixed-header .main-navigation .header-search {
+        color: #248A83;
+        padding-left: 1.5rem; }
 
 /*
 Main Home Section =============================
