@@ -923,10 +923,23 @@ Footer ===========================================
 .widget-area {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  border-left: 1px solid #e1e1e1; }
+  border-left: 1px solid #e1e1e1;
+  padding-left: 5%; }
+  .widget-area a {
+    text-decoration: none; }
 
-.widget-title h2 {
-  font-size: 1.5rem; }
+.widget-title {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.day-of-week {
+  font-weight: 700; }
+
+.widget_archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .single-product-title h1 {
   color: #d99054;
