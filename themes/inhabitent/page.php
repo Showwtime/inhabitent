@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<div class="container flex-content">
 <div id="primary" class="content-area">
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -21,5 +21,5 @@ get_header(); ?>
 
 
 <?php get_sidebar();?>
-
+</div>
 <?php get_footer(); ?>

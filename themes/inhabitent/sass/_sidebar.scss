@@ -1,10 +1,10 @@
-// Journal/Contact Us Pages ================================
+// Journal/Contact Us Sidebars ================================
 
 .flex-content{
     display: flex;
 }
 
-.blog {
+.blog, .page {
     .content-area{
         flex-basis: 75%;
         flex-grow: 1;
@@ -48,11 +48,9 @@
             width: 100%;
         }
     }
-
 }
 
-
-.widget-area{
+.widget-area, .page .widget-area{
 	flex-basis: 25%;
     border-left: 1px solid #e1e1e1;
     padding-left: 5%;
