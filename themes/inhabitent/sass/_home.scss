@@ -1,10 +1,10 @@
-// Journal/Contact Us Sidebars ================================
+// Journal ================================
 
 .flex-content{
     display: flex;
 }
 
-.blog, .page {
+.blog, .page{
     .content-area{
         flex-basis: 75%;
         flex-grow: 1;
@@ -50,6 +50,7 @@
     }
 }
 
+// Sidebar ==========================
 .widget-area, .page .widget-area{
 	flex-basis: 25%;
     border-left: 1px solid #e1e1e1;

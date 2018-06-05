@@ -719,7 +719,7 @@ object {
   font-size: 3rem;
   font-weight: 700; }
 
-.entry-header {
+.page-template-about .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,6 +742,9 @@ object {
   font-size: 2.1rem;
   font-weight: 700;
   text-align: center; }
+
+.shop-page {
+  margin-top: 5rem; }
 
 .page-header {
   text-align: center; }
@@ -805,13 +808,12 @@ object {
       -ms-flex-align: center;
           align-items: center; }
 
-.single-product-title h1 {
-  color: #d99054;
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-left: 3rem; }
+.product-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.single-product-entry-header {
+.single-product-content-area-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,12 +821,74 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: 1px solid #e1e1e1;
-  padding-top: 3rem; }
+  padding: 6rem 0 8rem; }
 
-.type-product {
+.single-product-entry-header img {
+  height: 100%;
+  max-width: 100%; }
+
+.single-product-info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 3rem; }
+
+.single-product-title h1 {
+  color: #d99054;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0; }
+
+.entry-content-single .price {
+  font-family: 'Novecentos';
+  font-size: 1.8rem;
+  margin-top: 0; }
+
+.contact-page .content-area {
+  margin: 0; }
+
+.page .entry-title {
+  font-weight: 700;
+  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.page .entry-content h2 {
+  font-size: 2rem; }
+
+label {
+  font-family: 'Novecentos';
+  margin-bottom: .5rem;
+  font-size: 1.1rem; }
+
+input[type=text], input[type=email], textarea {
+  font-size: 1rem;
+  font-family: 'Merriweather';
+  color: #666;
+  background-color: #f1f1f1;
+  padding: .3rem;
+  border-radius: 0; }
+
+textarea {
+  height: 200px;
+  width: 750px; }
+
+input[type=submit] {
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  background-color: #248A83;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: none;
+  border-radius: 0; }
 
 .flex-content {
   display: -webkit-box;
@@ -1045,6 +1109,9 @@ nav bar
 /*
 Main Home Section =============================
 */
+.home .site-content {
+  padding-top: 0; }
+
 .banner {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");

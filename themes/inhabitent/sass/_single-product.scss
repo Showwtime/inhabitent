@@ -1,20 +1,36 @@
 // Single Product Pages ==============================
 
+.product-flex{
+	display: flex;
+}
+
+.single-product-content-area-wrapper{
+	display: flex;
+	justify-content: center;
+	border-top: 1px solid #e1e1e1;
+	padding: 6rem 0 8rem;
+
+}
+
+.single-product-entry-header img{
+	height: 100%;
+	max-width: 100%;
+}
+
+.single-product-info{
+	flex-direction: column;
+	margin-left: 3rem;
+}
+
 .single-product-title h1{
 	color: #d99054;
 	font-size: 2.4rem;
 	font-weight: 700;
-	margin-left: 3rem;
-
+	margin: 0;
 }
 
-.single-product-entry-header{
-	display: flex;
-	justify-content: center;
-	border-top: 1px solid #e1e1e1;
-	padding-top: 3rem;
-}
-
-.type-product{
-	display: flex;
+.entry-content-single .price{
+	font-family: 'Novecentos';
+	font-size: 1.8rem;
+	margin-top: 0;
 }

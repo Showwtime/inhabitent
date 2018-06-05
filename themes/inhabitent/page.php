@@ -6,7 +6,8 @@
  */
 
 get_header(); ?>
-<div class="container flex-content">
+
+<div class="container flex-content contact-page">
 <div id="primary" class="content-area">
 
 <?php while ( have_posts() ) : the_post(); ?>
