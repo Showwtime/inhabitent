@@ -1,0 +1,59 @@
+// Single Journal Page
+
+.flex-content{
+    display: flex;
+}
+
+.single{
+    .content-area{
+        flex-basis: 75%;
+        flex-grow: 1;
+    }
+    .site-content{
+        padding-top: 7rem;
+    }
+    .site-main{
+        padding-right: 5%;
+    }
+    .entry-header{
+	position: relative;
+	width: auto;
+	margin: 0;
+    padding: 0;
+        h1{
+            position: absolute;
+            color: #fff;
+            background-color: #248A83;
+            left: 0;
+            top: 0;
+            padding: .75rem 1.5rem;
+            max-width: 75%;
+        }
+        .entry-title a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .entry-meta{
+            position: absolute;
+            color: #fff;
+            background-color: #248A83;
+            right: 0;
+            bottom: 0;
+            padding: .75rem, 1.5rem;
+            max-width: 75%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.single-journal-comments{
+    h3{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+}

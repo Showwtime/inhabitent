@@ -50,7 +50,7 @@ get_header(); ?>
 
 						<div class="item-info">
 
-						<?php the_title('<h2 class="entry-title"></h2>' ); ?>
+						<p class="entry-title"><?php the_title(); ?></p>
 						<p class="price dots">...................</p>
 						<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 

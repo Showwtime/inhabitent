@@ -27,7 +27,7 @@ get_header(); ?>
 
 			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+		<?php else: ?>
 
 			
 

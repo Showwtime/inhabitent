@@ -9,31 +9,46 @@ get_header(); ?>
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
-		<?php if ( have_posts() ) : ?>
+		<div class="taxonomy-product-type-wrapper">
+			<?php if ( have_posts() ) : ?>
+				<header class="page-header">
+					<?php
+						the_archive_title( '<h1 class="page-title">', '</h1>' );
+						the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					?>
+				</header><!-- .page-header -->
+				<div class="product-images">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+				
+				<div class="product-item">
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-			<div class="product-images">
-				<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<div class="thumbnail-wrapper">
 
-					<?php get_template_part( 'template-parts/content' ); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
+					<a href=<?php echo get_post_permalink() ?>><?php the_post_thumbnail( 'large' ); ?></a>
+					<?php endif; ?>
 
-				<?php endwhile; ?>
-			</div>
+					</div>
 
-			<?php the_posts_navigation(); ?>
+					<div class="item-info">
 
-		<?php else : ?>
+					<?php the_title('<h2 class="entry-title"></h2>' ); ?>
+					<p class="price dots">...................</p>
+					<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				</div>
+		</div>
+			<?php endwhile; ?>
 
-		<?php endif; ?>
+				<?php the_posts_navigation(); ?>
 
+				<?php else : ?>
+
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+			<?php endif; ?>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
