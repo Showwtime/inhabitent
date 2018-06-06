@@ -60,3 +60,26 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+
+.site-header  {
+	.toggle-search {
+
+	}
+	.search-field {
+		transition: .3s;
+		opacity: 0;
+		width: 0;
+
+		&-active {
+			opacity: 1;
+			width: 12.5rem;
+			height: 1rem;
+			background: transparent;
+		}
+	}
+	.search-form{
+		display: flex;
+		align-items: center;
+	  }
+}
