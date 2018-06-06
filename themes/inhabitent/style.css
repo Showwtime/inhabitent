@@ -879,9 +879,10 @@ object {
     position: absolute;
     color: #fff;
     background-color: #248A83;
+    font-weight: 700;
     left: 0;
     top: 0;
-    padding: .75rem 1.5rem;
+    padding: .5rem 1.5rem;
     max-width: 75%; }
   .single .entry-header .entry-title a {
     color: #fff;
@@ -902,6 +903,14 @@ object {
 .single-journal-comments h3 {
   font-size: 1.8rem;
   font-weight: 700; }
+
+.single-journal-comments input[type=submit] {
+  text-transform: uppercase; }
+  .single-journal-comments input[type=submit]:hover, .single-journal-comments input[type=submit] :visited {
+    color: #fff;
+    background-color: #196162;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .contact-page .content-area {
   margin: 0; }
@@ -947,6 +956,10 @@ input[type=submit] {
   text-shadow: none;
   border: none;
   border-radius: 0; }
+  input[type=submit]:hover, input[type=submit] :visited {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #196162; }
 
 .flex-content {
   display: -webkit-box;

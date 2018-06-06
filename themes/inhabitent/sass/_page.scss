@@ -47,5 +47,8 @@ input[type=submit]{
     text-shadow: none;
     border: none;
     border-radius: 0;
-
+    &:hover, :visited{
+        box-shadow: none;
+        background-color: #196162;
+    }
 }
