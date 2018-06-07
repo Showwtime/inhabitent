@@ -106,7 +106,8 @@ if ( ! function_exists( 'red_starter_setup' ) ) :
 			
 			// ==================== Added hooks from class =============================
 
-			/**
-			 * Search bar button
-			 */
+			add_action( 'wp_enqueue_scripts', 'wp_fa' );
+			function wp_fa() {
+    wp_enqueue_script( 'font_awesome', 'https://use.fontawesome.com/828aefed19.js' ); 
+}
 			
