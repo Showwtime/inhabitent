@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="container flex-content">
+<div class="container flex-content journal-page">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

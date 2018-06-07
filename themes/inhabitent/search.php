@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div class="container flex-content search-page">
+<div class="container flex-content search-results-page">
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -35,5 +35,5 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
-<div><!-- container flex-content search-page-->
+</div>
 <?php get_footer(); ?>
