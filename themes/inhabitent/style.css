@@ -1101,6 +1101,34 @@ input[type=submit] {
     background-color: #248A83;
     padding: .4rem .75rem; }
 
+.error404 a {
+  text-decoration: none; }
+
+.error404 .site-content {
+  margin-top: 5rem; }
+
+.error404 .page-title {
+  font-size: 2.4rem; }
+
+.error404 input[type=search] {
+  background-color: #e1e1e1;
+  width: 12.5rem;
+  height: 2rem; }
+
+.error404 .search-toggle {
+  margin-top: 2rem; }
+
+.error404 .search-form {
+  margin-bottom: 2.5rem; }
+
+.error404 .widget .widgettitle {
+  font-weight: 700; }
+
+.error404 .widget ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+
 /* 
 Footer ===========================================
 */
@@ -1129,6 +1157,7 @@ Footer ===========================================
 .contact-info h3 {
   color: #d99054;
   font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 0.75rem; }
 
 .contact-info p {
@@ -1141,6 +1170,7 @@ Footer ===========================================
 .business-hours h3 {
   color: #d99054;
   font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 0.75rem; }
 
 .business-hours p {
@@ -1159,6 +1189,7 @@ Footer ===========================================
   color: #fff; }
 
 .copyright {
+  font-family: 'Novecentos', sans-serif;
   margin: auto;
   text-align: center;
   padding: 1.5rem 0; }

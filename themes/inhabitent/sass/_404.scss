@@ -1,0 +1,32 @@
+.error404{
+    a{
+        text-decoration: none;
+    }
+    .site-content{
+        margin-top: 5rem;
+    }
+    .page-title{
+        font-size: 2.4rem;
+    }
+    input[type=search]{
+        background-color: #e1e1e1;
+        width: 12.5rem;
+        height: 2rem;
+    }
+    .search-toggle{
+       margin-top: 2rem;
+    }
+    .search-form{
+        margin-bottom: 2.5rem;
+    }
+    .widget{
+        .widgettitle{
+            font-weight:700;
+        }
+        ul{
+            list-style-type: none; 
+            margin-left: 0;
+            padding-left: 0; 
+        }
+    }
+}
